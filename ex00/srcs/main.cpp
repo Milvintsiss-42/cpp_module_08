@@ -6,7 +6,7 @@
 /*   By: ple-stra <ple-stra@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 17:36:12 by ple-stra          #+#    #+#             */
-/*   Updated: 2024/02/19 20:03:41 by ple-stra         ###   ########.fr       */
+/*   Updated: 2024/02/23 17:54:12 by ple-stra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,9 @@ int	main(void)
 	std::for_each(easyfind(d, 1337), d.end(), &print_int);
 	std::cout << std::endl;
 
+	if (easyfind(d, 7) != d.end())
+		std::cout << "7 is in the array." << std::endl;
+	else
+		std::cout << "7 is not in the array." << std::endl;
 	return (0);
 }
